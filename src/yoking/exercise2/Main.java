@@ -13,6 +13,7 @@ public class Main {
 		 * 4. Si measurement es mayor que 8 y menor o igual a 10, indicar: "medición muy alta"
 		 */
  
+		//Finalizado.
 		float measurement = 0.0f;        // Cambiar según las pruebas
 
 		if(measurement<2) {System.out.println("medición muy baja");
