@@ -1,7 +1,7 @@
 package yoking.exercise4;
 
 import java.util.Scanner;
-import isVowel.funcion;
+import yoking.exercise4.utils.Letters;
 
 public class Main {
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class Main {
 		System.out.println("Ingrese la vocal: ");
 		char vowel = scan.next().charAt(0);
 
-		if (isVowel.funcion.isVowel(vowel)) {
+		if (Letters.isVowel(vowel)) {
 			System.out.println("Es una vocal");
 			return;
 		} else {

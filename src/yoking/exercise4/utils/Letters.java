@@ -1,6 +1,6 @@
-package isVowel;
+package yoking.exercise4.utils;
 
-public class funcion {
+public class Letters {
 
 	public static boolean isVowel(char Vowel) {
 		if (Vowel == ('a') || Vowel == ('e') || Vowel == ('i') || Vowel == ('o') || Vowel == ('u')) {
@@ -8,4 +8,5 @@ public class funcion {
 		}
 		return false;
 	}
+
 }
