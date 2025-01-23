@@ -21,12 +21,12 @@ public class Main {
 		
 		// Aprendi 3 nuevas sintaxis (continue, isDigit, isLetter )
 		Scanner scan = new Scanner(System.in);
-		boolean isTrue = false;
-		int counter = 0;
+		boolean correctPassword = false;
+		int letterCounter = 0;
 		int isNum = 0;
-		int isThe = 0;
+		int isTheCharacter = 0;
 		
-		while (isTrue == false) {
+		while (correctPassword == false) {
 			System.out.println("Ingrese la contraseña");
 			String pasword = scan.nextLine();
 			char[] splitedPasword = pasword.toCharArray();
@@ -44,11 +44,11 @@ public class Main {
 				}
 
 				if (Character.isLetter(splitedPasword[i])) {
-					counter++;
+					letterCounter++;
 				}
 
 				if (splitedPasword[i] == '*') {
-					isThe++;
+					isTheCharacter++;
 				}
 			}
 
@@ -56,16 +56,17 @@ public class Main {
 				System.out.println("Debe de Incluir como minimo 3 digitos");
 				continue;
 			}
-			if (counter <= 2) {
+			if (letterCounter <= 2) {
 				System.out.println("Debe de Incluir como minimo 3 letras");
 				continue;
 			}
-			if (isThe < 1) {
+			if (isTheCharacter < 1) {
 				System.out.println("Debe incluir un *");
 				continue;
 			}
 			
 			System.out.println("Contraseña correcta");
+			correctPassword = true;
 			
 		}
 	}
